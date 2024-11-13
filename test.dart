@@ -3,10 +3,10 @@ void main() {
 
   var mappedIterable = list.map(
     (e) {
+      print("test $e");
       return e * 10;
     },
   );
-
+  mappedIterable.elementAt(2);
   mappedIterable.toList();
-  print(mappedIterable);
 }
